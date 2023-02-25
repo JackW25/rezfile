@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>YouTube Downloader</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="utf-8" />
+        <meta content="RezFile YouTube Downloader" property="og:title" />
+        <meta content="Ad-free YouTube & SoundCloud Downloader!" property="og:description" />
+        <meta content="https://rezfile.onrender.com" property="og:url" />
+        <meta content="static/embeds/embed.png" property="og:image" />
+        <meta content="#1F1627" data-react-helmet="true" name="theme-color" />
+        <link rel="icon" href="static/embeds/Rezfile_embed1.png" type="image/icon type" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" type="text/css" href="static/css/betastyle.css"/>
+        <script src="index.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+        <script src="https://kit.fontawesome.com/2ddd5825e5.js" crossorigin="anonymous"></script>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("topNavbar");
+              if (x.className === "navbar") {
+                x.className += " responsive";
+              } else {
+                x.className = "navbar";
+              }
+            }
+        </script>
+    </head>
+    <body style="background-color:#1F1627">
+        <div class="navbar" id="topNavbar">
+            <div class="logo">
+                <a href="/">
+                    <img src="./static/header-logo.png">
+            </div>
+            <div class="header-right">
+            <a href="/faq" style="text-decoration:none">FAQ and Help</a>
+            <a href="/about" style="text-decoration:none">About</a>
+            <a href="/support" style="text-decoration:none">Support</a>
+            <div class="dropdown">
+            <button class="dropbtn">Features</button>
+            <div class="dropdown-content">
+            <a href="/downloads" style="text-decoration:none">Downloaders</a>
+            <a href="/convert" style="text-decoration:none">File Converter</a>
+            </div>
+            </div>
+            <a href="javascript:void(0);" style="text-decoration:none" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+            </div> 
+        </div>
+        <div class="main">
+            <div class="container-fluid">
+                <div class="jumbotron text-center">
+                    <img src="/static/ytd-page/ytd-header.png" class="responsive">
+                </div>
+                <div class="row">
+                    <div class="col-md-4 offset-md-4">
+                        <div class="alert info">
+                            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                            <strong>UPDATE:</strong> As of 2023-02-19, the downloading script has been completely reworked, this may not work 100% so please be patient as any bugs are ironed out, and please report anything in our discord server linked at the bottom of this page. Thank you.
+                        </div>
+                        <div>
+                            <div class="alert success">
+                                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                                <strong>This page is in beta!</strong> Please report any bugs in the discord (linked below)
+                            </div>
+                        </div>
+                        <form>
+                            <div class="form-group">
+                                <input class="form-control" type="search" name="url" placeholder="Enter a YT URL" required />
+                            </div>
+                            <div class="form-group text-center">
+                                <span>
+                                <img src="/static/ytd-page/ytd-v.png">
+                                </span>
+                                <div class="form-group text-center">
+                                    <span>
+                                    <a href="/mkv"><button class="button button5" type="submit" formaction="/mkv">MKV</button></a>
+                                    <a href="/mp4"><button class="button button5" type="submit" formaction="/mp4">MP4</button></a>
+                                    <a><button class="button button5 disabled" type="submit">WEBM</button></a>
+                                    </span>
+                                </div>
+                                <div class="form-group text-center">
+                                    <span>
+                                    <img src="/static/ytd-page/ytd-a.png" class="responsive">
+                                    </span>
+                                    <div class="form-group text-center">
+                                        <span>
+                                        <a href="/mp3"><button class="button button5" type="submit" formaction="/mp3">MP3</button></a>
+                                        <a href="/wav"><button class="button button5" type="submit" formaction="/wav">WAV</button></a>
+                                        <a href="/flac"><button class="button button5" type="submit" formaction="/flac">FLAC</button></a>
+                                        </span>
+                                    </div>
+                                    <div class="form-gorup text-center">
+                                        <h5>For info on the different formats and how they're encoded, go <a style="text-decoration:none" href="/ytd-encoding">Here</a></h5>
+                                    </div>
+                                    <div class="alert">
+                                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                                        <strong>NOTICE!</strong> Some browsers may have slower download times and/or not be able to work with the downloader
+                                    </div>
+                                    <footer>
+                                        <div class="text-center">
+                                            <h6 style="color:red;">Made by Jack Wonnacott with <3</h6>
+                                            <a target="_blank" href="https://github.com/JackW25/yt-downloader"><img src="static/icons/github.png" class="responsive" alt="View on GitHub"></a><a target="_blank" href="https://discord.com/invite/g8FrSVd3NY"><img src="static/icons/discord.png" class="responsive" alt="Join our Discord!"></a>
+                                        </div>
+                                    </footer>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
