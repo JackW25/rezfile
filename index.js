@@ -17,61 +17,6 @@ app.get('/', function(request, response) {
     response.sendFile('homepage.html', { root: './' });
     });
 
-app.get('/yt-dl', function(request, response){
-    response.sendFile('index.html', {root:'./'});
-  });
-
-  app.get('/faq', function(request, response) {
-    response.sendFile('faq.html', { root: './' });
-    });
-
-  app.get('/about', function(request, response) {
-    response.sendFile('about.html', { root: './' });
-    });
-
-  app.get('/support', function(request, response) {
-    response.sendFile('unavailable.html', { root: './' });
-    });
-
-  app.get('/convert', function(request, response) {
-    response.sendFile('unavailable.html', { root: './' });
-    });
-
-  app.get('/downloads', function(request, response) {
-    response.sendFile('downloads-landing.html', { root: './' });
-    });
-
-   app.get('/sc-dl', function(request, response) {
-    response.sendFile('soundcloud.html', { root: './' });
-    });
-
-   app.get('/ytd-encoding', function(request, response) {
-    response.sendFile('encoding.html', { root: './' });
-    });
-
-        // Error Pages //
-  // app.all('*', (req, res) => {
- //res.status(404).sendFile('404.html', { root: './' });
-//});
-
-        // Legacy Pages //
-app.get('/legacy', function(request, response) {
-    response.sendFile('old-homepage.html', { root: './' });
-    console.log('Homepage Landed');
-});
-
-app.get('/legacy-ytdl', function(request, response) {
-    response.sendFile('old-downloader.html', { root: './' });
-    console.log('Downloader Landed');
-});
-
-app.get('/legacy-ohno', function(request, response) {
-    response.sendFile('old-about.html', { root: './' });
-    console.log('Downloads Page Landed');
-});
-
-    // File Downloads (updated 2023-02-19)
-
 app.get('/mp4', (request, response) => {
     var url = request.query.url;
         ytdl.getInfo(url).then(info => {
