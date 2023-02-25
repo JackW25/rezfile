@@ -1,0 +1,7 @@
+index.js
+node_modules/
+static/
+localized/
+accessible/
+package.json
+package-lock.json
