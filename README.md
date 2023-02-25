@@ -1,19 +1,9 @@
-# YT-Downloader
+# REZFILE Source Code
 
-Made by: JackW25
+Made by: JackW25/Jack Wonnacott
 
-https://refile.onrender.com/
+This is the public sample of the code to Rezfile.
+https://www.rezfile.onrender.com
 
-OLD URL:
-http://rainure-yt-downloader.herokuapp.com/
-
-if you have an issue with it, please open an issue, if you have any suggestions feel free to open a pull request
-
-I do not add certain things to the website upon request, but if they are reasonable and/or highly suggested I will try and add them to the main website
-
-# What is this?
-
-This is a side project I have made to learn HTML/CSS. It uses NodeJS and YTDL-CORE to convert a youtube link into a variety of different Audio/Video Formats
-
-**Note:** Github Pages does *not* work, please use the render link above
-Please do not take this for your own work, if you would like to modify or edit it please make a Pull request or an issue.
+# PLEASE NOTE
+This is not the exact source code, some parts that contain sensitive information have been removed before posting to this repository, as such, this isn't the source code of the site exactly and may not work the same. All the code removed has been API keys, basic functions, and other irrelevant or sensitive information.
